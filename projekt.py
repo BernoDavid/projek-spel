@@ -1,5 +1,5 @@
 '''
-FILNAMN.PY: Maze Chase, ett pacman liknande spel där du äter mat för att bli snabbare medan du försöker undvika monstret som jagar dig.
+projekt.py: Maze Chase, ett pacman liknande spel där du äter mat för att bli snabbare medan du försöker undvika monstret som jagar dig.
 
 __author__  = "David Berno"
 __version__ = "1.0.0"
