@@ -1,0 +1,61 @@
+START
+
+- Starta pygame
+- Skapa fönster och sätt storlek (800x600)
+- Sätt spelets titel "Maze Chase"
+- Definiera färger (vit, svart, gul, röd, blå)
+
+- Skapa variabler:
+  - Spelarens storlek, fiendens storlek, matens storlek, boostens storlek = 30
+  - Spelarens hastighet = 5
+  - Boost-hastighet = 10
+  - Fiendens hastighet = 3
+
+- Skapa spelobjekt:
+  - Spelaren startar i mitten av skärmen
+  - Fienden startar på en slumpmässig plats
+  - Maten startar på en slumpmässig plats
+  - Ingen boost i början
+
+- Sätt startvärden:
+  - Spelet är igång (running = True)
+  - Poäng = 0
+  - Klocka för att styra spelets hastighet
+  - Spelarens nuvarande hastighet = normal
+  - Boost är inte aktiv
+
+LOOPA så länge spelet är igång:
+  - Fyll skärmen med svart bakgrund
+  - Visa poängen på skärmen
+
+  - Kolla om spelaren stänger spelet
+
+  - Läs in knapptryck:
+    - Om vänsterpil trycks, flytta spelaren åt vänster
+    - Om högerpil trycks, flytta spelaren åt höger
+    - Om uppåtpil trycks, flytta spelaren uppåt
+    - Om nedåtpil trycks, flytta spelaren nedåt
+
+  - Se till att spelaren inte går utanför skärmen
+
+  - Flytta fienden mot spelaren
+
+  - Om spelaren rör vid maten:
+    - Flytta maten till en ny slumpmässig plats
+    - Öka poängen med 1
+    - Om poängen är delbar med 10 och det inte finns någon boost:
+      - Skapa en boost på en slumpmässig plats
+
+  - Om spelaren tar boosten:
+    - Ta bort boosten
+    - Gör spelaren snabbare i 3 sekunder
+
+  - Om spelaren träffar fienden:
+    - Skriv ut "Game Over!" och visa poängen
+    - Avsluta spelet
+
+  - Rita spelaren, fienden, maten och boosten på skärmen
+  - Uppdatera skärmen
+  - Vänta lite så spelet kör i lagom hastighet (30 FPS)
+
+AVSLUTA spelet
